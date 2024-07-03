@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    border: border-box;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Arial, sans-serif;
+    
+}
+
+.header{
+   
+    height: 300px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../images/farm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    opacity: 0.8;
+ 
+    border: 2px solid green;
+    border-radius: 0.5rem;
+}
+
+.header h1{
+    font-weight: 900;
+    font-size: 5rem;
+    background-color: rgba(244, 241, 197, 0.8);
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 0.5rem;
+    color: rgba(25, 24, 26, 0.9);
+   
+}
+
+.navbar{
+    height: 3rem;
+    display: flex;
+    background-color: forestgreen; 
+    font-size: larger;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    opacity: 1;
+    margin-top: 2px;
+    border: 2px solid green;
+    border-radius: 0.5rem;
+    position: sticky;
+    top: 0;   
+    
+}
+#title{
+    font-weight: 900;
+    font-size: x-large;
+    padding-left: 3rem;
+    color: #fff;
+}
+i{
+    padding: 2rem;
+    color: #fff;
+    transition: transform 0.1s ease-in-out;
+}
+
+.navbar i:hover{
+    color: rgb(10, 32, 228 , 0.8);  
+    transform: scale(1.5);
+}  
+
+
+.content{
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.5rem;
+}
+.heading{
+
+    text-decoration: underline;
+    color: #2e8300;
+}
+
+.inner li{
+    text-decoration: underline;
+}
+
+.social-media{
+     display: flex; 
+    /* display: inline-block; */
+     justify-content: center;
+    align-items: center; 
+    color: black;
+    height: 2rem;
+    margin-top: 4rem;
+    margin: 0 10px;
+    font-size: 29px;
+}
+
+   
+
+.nop {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-start; /* Align items to the start of the flex container (left side) */
+    gap: 60px; /* Add some spacing between columns */
+    background-color: #4faf56;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+ .footer-column {
+    width: calc(33.33% - 20px); /* Divide container width equally for three columns and adjust for spacing */
+} 
+
+.copyright{
+    background-color: #4faf56;
+    color: #fff;
+    text-align: center;
+    height: 2rem;
+
+}

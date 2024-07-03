@@ -1,0 +1,455 @@
+body {
+    font-family: Arial, sans-serif;
+    
+    width: 100%;
+    height: 100%;
+}
+
+/* *{
+box-sizing: border-box;
+
+} */
+
+header {
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center; /* Center items vertically */
+    padding: 1px 20px; /* Add some padding for better spacing */
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+
+  }
+  header a {
+    text-decoration: none;
+  }
+  
+  header h1 {
+    color: green;
+  }
+
+  .navbar {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: sticky;
+    opacity: 1;
+
+  }
+  
+  .navbar li {
+    margin-left: 35px; /* Add some space between navigation items */
+    font-weight: 700;
+    font-size: larger;
+  }
+  
+  
+  
+  .navbar li:first-child {
+    margin-left: 0; /* No margin for the first item */
+  }
+  
+  .login-btn {
+    margin-left: auto; /* Push the login button to the right */
+  }
+  
+  .navbar a {
+    color: black; /* Set default color to green */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Add transition for color change */
+  }
+  
+  .navbar a:hover {
+    color: green; /* Change color to black on hover */
+    transform: scale(1.05);
+
+  }
+  
+  /* Styles for hiding and showing the profile, cart, and logout links */
+.hidden {
+    display: none;
+}
+
+  
+
+section {
+    padding: 50px;
+}
+
+
+
+
+
+
+  
+
+
+  
+
+.imageslide{
+    width: 100%;
+    height: 680px;
+    background-image: url(/images/bajri.jpg);
+    background-size: 99% 91%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeimage 21s linear infinite;
+
+}
+
+@keyframes  changeimage{
+
+0%{
+    background-image: url('images/back/1.jpg');
+}
+25%{
+    background-image: url('images/back/6.jpg');
+}
+50%{
+    background-image: url('images/back/7.jpg');
+}
+75%{
+    background-image: url('images/back/4.jpg');
+}
+100%{
+    background-image: url('images/back/1.jpg');
+}
+}
+
+
+
+
+
+.imageslide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Set height to full viewport height */
+}
+
+/* Additional styles for h2, p, and .btn */
+.imageslide h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.imageslide p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    
+}
+
+.imageslide .btn {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.imageslide .btn:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 29px;
+    color: #333; /* Default icon color */
+}
+
+.social-icon:hover {
+    color: #007bff; /* Hovered icon color */
+}
+
+footer {
+    background-color: #4faf56;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+}
+
+
+#explore {
+    text-align: center;
+  }
+  
+  .swiper-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .swiper-slide {
+    background-color: #fffafa;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .swiper-pagination {
+    margin-top: 20px;
+  }
+
+  /* Explore section styles */
+#explore {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.carousel {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+.introduction {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 50px; /* Add padding for spacing */
+    text-align: center; /* Center align text */
+    border-bottom: 2px solid #ccc; /* Add a subtle border at the bottom */
+  }
+  
+  .introduction h1 {
+    font-size: 36px; /* Larger font size for the header */
+    color: #333; /* Dark gray color for the header text */
+    margin-bottom: 20px; /* Add spacing below the header */
+  }
+  
+  .introduction p {
+    font-size: 26px; /* Font size for the paragraph */
+    color: #666; /* Slightly darker gray color for the paragraph text */
+    line-height: 1.6; /* Increase line height for better readability */
+  }
+  
+
+
+
+
+
+.card {
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #d6d6d6;
+    border-radius: 30px;
+    margin: 28px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Apply transition to transform property */
+}
+
+.card:hover {
+    box-shadow: 3px 2px 4px black;
+    transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card span {
+    font-size: 14px;
+    color: #666;
+}
+
+                       
+
+
+
+
+
+/* Section styles */
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Heading styles */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+.about-content2{
+    color: black;
+    font-size: larger;
+}
+
+/* Anchor (link) styles */
+section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: none;
+    color: green;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section a:hover {
+    color:black;
+}
+
+#contact{
+    font-size: large;
+}
+
+
+/* @keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
+
+
+/* Keyframes for typewriter animation */
+@keyframes typewriter {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.5;
+    }
+    50% {
+        width: 50%;
+        opacity: 1;
+    }
+    70% {
+        width: 70%;
+        opacity: 0.8;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* Apply typewriter animation to the intro text */
+#intro-text {
+    overflow: hidden; /* Hide overflow text */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: typewriter 8s steps(40) infinite; /* Typewriter animation with custom timing (increased duration) */
+}
+
+
+
+
+
+
+ /* CSS styles */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Home section styles */
+#home {
+    background-image: url('/images/farm.jpg'); /* Replace '/images/farm.jpg' with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    opacity: 0.9;
+    text-align: center;
+    padding: 234px 0;
+}
+
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: cornsilk;
+
+}
+
+#home p {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: black;
+    color: wheat;
+}
+
+
+.back{
+    opacity: inherit;
+}
+
+
+
+
+/* .footer-column1 {
+    margin-left: -80%;
+}
+
+
+
+
+.footer-column2 {
+    margin-left: -90%;
+} */
+
+.nop {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-start; /* Align items to the start of the flex container (left side) */
+    gap: 60px; /* Add some spacing between columns */
+}
+
+.footer-column {
+    width: calc(33.33% - 20px); /* Divide container width equally for three columns and adjust for spacing */
+}
+
