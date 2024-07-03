@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growcrop</title>
+  <link rel="stylesheet" href="../static/home.css">
+  <script src="script.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+<header>
+    <a href="https://growcrop.netlify.app">
+        <h1>GrowCrop</h1>
+    </a>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a id="loginLogoutLink" href="/login">login</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+  <!-- <section id="home">
+        <h2>Heyyy Farmers!!!</h2>
+        <p>Just one click away to find the best crops to grow based on your location</p>
+        <a href="recmmendation.html" class="btn" onclick="redirectToRecommendation()">Get Recommendation</a>
+        
+        <div class="back">
+
+        </div>
+    </section> -->
+
+  <!-- <section id="home">
+   
+    <h2>Heyyy Farmers!!!</h2>
+    <p id="intro-text">Just one click away to find the best crops to grow based on your location</p>
+    <a href="recmmendation.html" class="btn" onclick="redirectToRecommendation()">Get Recommendation</a>
+    <div class="back"></div>
+  </section> -->
+
+
+  <!-- <section id="home">
+
+  </section> -->
+  <div class="imageslide">
+    <p id="intro-text">Just one click away to find the best crops to grow based on your location</p>
+    <a href="/form" class="btn" onclick="redirectToRecommendation()">Get Recommendation</a>
+    <!-- <form action="/Predict">
+      <input type="submit" id="Predict" name="Predict" action="/Predict" value="Predict">
+    </form> -->
+    <div class="back"></div>
+  </div>
+
+
+
+  <!-- <script>
+    function redirectToRecommendation() {
+      window.location.href = "recmmendation.html"; // Replace "recommendation.html" with the URL of your recommendation page
+    }
+  </script> -->
+
+<section id="explore">
+  <div class="introduction">
+    
+    <h1>With love GrowFarm !!!</h1>
+    <p>Discover the finest selection of crops cultivated with care and dedication. </p>
+  </div>
+
+ 
+
+  
+  <div class="container">
+    <div class="card">
+      <h1>Grapes</h1>
+      <div class="image">
+        <img src="../static/images/grapes2.jpg" alt="">
+      </div>
+      <a href="/crop?type=grapes" class="btn">Read More</a>
+
+    </div>
+    <div class="card">
+      <h1>Rice</h1>
+      <div class="image">
+        <img src="../static/images/rice-card.jpg" alt="">
+      </div>
+      <a href="/crop?type=rice" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Wheat</h1>
+      <div class="image">
+        <img src="../static/images/wheat.jpg" alt="">
+      </div>
+      <a href="/crop?type=wheat" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>maize</h1>
+      <div class="image">
+        <img src="../static/images/corn.jpg" alt="">
+      </div>
+      <a href="/crop?type=maize" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>SugarCane</h1>
+      <div class="image">
+        <img src="../static/images/sugarcane.jpg" alt="">
+      </div>
+      <a href="/crop?type=sugarcane" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Tomato</h1>
+      <div class="image">
+        <img src="../static/images/tomato2.jpg" alt="">
+      </div>
+      <a href="/crop?type=Tomato" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Cotton</h1>
+      <div class="image">
+        <img src="../static/images/COTTON.JPG" alt="">
+      </div>
+      <a href="/crop?type=Cotton" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>soybeans</h1>
+      <div class="image">
+        <img src="../static/images/soya2.jpg" alt="">
+      </div>
+      <a href="/crop?type=soybeans" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Bajri</h1>
+      <div class="image">
+        <img src="../static/images/bajri.jpg" alt="">
+      </div>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Tea</h1>
+      <div class="image">
+        <img src="../static/images/tea.jpg" alt="">
+      </div>
+      <a href="/crop?type=tea" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Carrots</h1>
+      <div class="image">
+        <img src="../static/images/carrots.jpg" alt="">
+      </div>
+      <a href="/crop?type=Carrots" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Cabbage</h1>
+      <div class="image">
+        <img src="../static/images/cabbage.jpg" alt="">
+      </div>
+      <a href="/crop?type=cabbage" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Potato</h1>
+      <div class="image">
+        <img src="../static/images/potato2.jpg" alt="">
+      </div>
+      <a href="/crop?type=patato" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>watermelon</h1>
+      <div class="image">
+        <img src="../static/images/waterm2.jpg" alt="">
+      </div>
+      <a href="/crop?type=Watermelon" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <h1>Orange</h1>
+      <div class="image">
+        <img src="../static/images/oranges.jpg" alt="">
+      </div>
+      <a href="/crop?type=oranges" class="btn">Read More</a>
+    </div>
+  </section>
+
+    <section id="about" class="about-section">
+      <div class="about-content2">
+        <h2>About Us:</h2>
+        <p>
+          "We help farmers grow by providing personalized crop recommendations. Our expertise in agricultural research
+          and technology allows us to offer tailored suggestions based on factors like location, soil type, and
+          climate conditions. Our mission is to optimize crop production, improve yield, and promote sustainable
+          agriculture practices. Join us in revolutionizing farming and building a resilient future for farming
+          communities worldwide."
+        </p>
+      </div>
+    
+    </section>
+    
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>For inquiries or feedback, please contact us at <a href="mailto:info@growcrop@gmail.com">here!!!</a>.</p>
+    </section>
+
+    <div class="social-media">
+      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+
+    <footer>
+
+
+      <div class="nop">
+
+        <div class="footer-column1">
+          <!-- Content for the first column -->
+          <h3>ADDRESS </h3>
+          <p>Near DKTE collage<br>Zenda chouk, Ichalkaranji<br>PIN:416115<br>Maharashtra ,India</p>
+        </div>
+
+        <div class="footer-column2">
+          <!-- Content for the first column -->
+          <h3>COMPANY </h3>
+          <p>privacy policy</p>
+          <p>Terms and condition</p>
+
+        </div>
+
+        <div class="footer-column3">
+          <!-- Content for the first column -->
+          <h3>RESOURCE</h3>
+          <p>Refund and Return Policy</p>
+
+        </div>
+      </div>
+
+
+
+
+      <p>&copy; 2024 growcrop. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+var username = localStorage.getItem('username');
+    var loginLogoutLink = document.getElementById('loginLogoutLink');
+
+    if (username) {
+        // User is logged in, change the link to "Logout"
+        loginLogoutLink.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
+    } else {
+        // User is not logged in, link remains "Login"
+        loginLogoutLink.innerHTML = '<a href="/login">Login</a>';
+    }
+
+    function logout() {
+        // Remove username from local storage
+        localStorage.removeItem('username');
+        // Redirect to login page
+        window.location.href = "/login";
+    }
+        window.onload = function() {
+        var username = localStorage.getItem('username');
+        if (!username) {
+            // Display alert if user is not logged in
+            alert("You are not logged in. Please login first.");
+            // Redirect to login page
+            window.location.href = "/login";
+        } else {
+            // Perform other actions for logged-in users
+            // alert("Welcome back, " + username + "!");
+            // You can perform any other actions here for logged-in users
+        }
+    };
+    </script>
+</body>
+
+</html>

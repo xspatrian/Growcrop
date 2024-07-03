@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 100px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Here you can implement your authentication logic
+        // For simplicity, let's just check if username and password are not empty
+        if (username.trim() === '' || password.trim() === '') {
+            alert('Please enter username and password');
+            return;
+        }
+
+        // Store username in local storage
+        localStorage.setItem('username', username);
+
+        // Redirect to home page or perform other actions
+        alert('Login successful!');
+        window.location.href = '/'; // Change 'home.html' to your desired page
+    });
+
+    // Check if user is already logged in
+    window.onload = function() {
+        var username = localStorage.getItem('username');
+        if (username) {
+            // Redirect to home page or perform other actions
+            // window.location.re// Change 'home.html' to your desired page
+        }
+    };
+</script>
+
+</body>
+</html>
